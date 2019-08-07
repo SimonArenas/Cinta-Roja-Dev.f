@@ -4,7 +4,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose=require("mongoose");
 const mongoURI=require("./config/keys").mongoURI;
-const PORT = 3000;
+const PORT =  process.env.PORT || 3000; //Línea para Horoku
 const router = require("./Routes/routes"); //llamando a las routes.js
 
 
