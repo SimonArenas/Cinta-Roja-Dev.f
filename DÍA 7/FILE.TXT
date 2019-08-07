@@ -1,6 +1,0 @@
-//Stack MERN
-
-//MongoDB (no relacional) CRUD (Create Read Update Delate)
-//Express (Serividor)
-//React (Cliente)
-//NodeJS -> npm (Node Package Manager)
