@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './App.css';
 import PrimerComponente from './components/PrimerComponente';
@@ -6,6 +7,8 @@ import Footer from './components/Footer';
 import ListaPeliculas from './components/ListaPeliculas';
 
 function App() {
+
+  
   const fecha = new Date().getFullYear();
   return (
     <div>
@@ -18,9 +21,13 @@ function App() {
       />
       <Footer
       fecha={fecha}/>
+      
     </div>
     
   );
+  
 }
+
+
 
 export default App;

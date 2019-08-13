@@ -10,7 +10,6 @@ const Pelicula = ({ pelicula }) => {
                     <Card.Title> <h3>Título: {pelicula.title}</h3> </Card.Title>
                     <Card.Text>
                         <p>Año: {pelicula.year}</p>
-
                         <p>Genero:</p>
                         <p>Director: {pelicula.director}</p>
                     </Card.Text>
@@ -22,3 +21,5 @@ const Pelicula = ({ pelicula }) => {
 }
 
 export default Pelicula
+
+
