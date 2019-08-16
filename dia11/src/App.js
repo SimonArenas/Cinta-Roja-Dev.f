@@ -1,33 +1,20 @@
+import React, { Fragment } from 'react';
 
-import React from 'react';
-import './App.css';
-import PrimerComponente from './components/PrimerComponente';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import ListaPeliculas from './components/ListaPeliculas';
+// Router
+import { BrowserRouter, Route } from 'react-router-dom';
+import MainContainer from './containers/MainContainer/MainContainer';
+import AddMovieContainer from './containers/AddMovieContainer/AddMovieContainer';
 
 function App() {
-
-  
-  const fecha = new Date().getFullYear();
   return (
-    <div>
-   
-      <PrimerComponente/>
-      <Header
-      titulo='Netflix'/>
-      <ListaPeliculas
-      
-      />
-      <Footer
-      fecha={fecha}/>
-      
-    </div>
-    
+
+    <Fragment>
+      <BrowserRouter>
+        <Route exact path="/" component={MainContainer} />
+        <Route exact path="/add" component={AddMovieContainer} />
+      </BrowserRouter>
+    </Fragment>
   );
-  
 }
-
-
 
 export default App;
